@@ -1,0 +1,6 @@
+source leaprc.protein.ff19SB
+source leaprc.gaff
+loadoff ./TYD_ff19SB/TYD.lib
+loadAmberParams ./TYD_ff19SB/TYD.frcmod
+mol = loadpdb test.pdb
+saveamberparm mol test.prmtop test.crd

@@ -1,0 +1,12 @@
+frcmod from GenA.cu 
+DIHE
+N -CX-CT-CA       1    1.548683     180   -1
+N -CX-CT-CA       1    0.606324     180   -2
+N -CX-CT-CA       1    2.264880       0   -3
+N -CX-CT-CA       1    0.000391     180    4
+CA-CT-CX-C        1    1.831890     180   -1
+CA-CT-CX-C        1    0.678583     180   -2
+CA-CT-CX-C        1    1.837180     180   -3
+CA-CT-CX-C        1    0.078286       0    4
+CX-CT-CA-CA       1    0.215347       0   -2
+CX-CT-CA-CA       1    0.077396       0    4
