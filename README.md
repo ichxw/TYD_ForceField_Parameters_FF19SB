@@ -2,16 +2,15 @@
 ## 1. Background
 * In the pKa analysis conducted using [H++](http://newbiophysics.cs.vt.edu/H++/index.php), it was noted that the tyrosine residue, positioned identically in chain A and chain B of the dimeric protein - which share the same sequence - exhibits distinct pKa values across the two chains.
 * Two figures below show the titration curve of the TYR240 on Chain A (left) and Chain B(right).
-
-<p align="left">
-  <img align="left" src="./img/TYR_A_pKa.svg" alt="pKa=11.7" width="50%" class="center">
-</p>
-
-<p align="right">
-  <img align="right" src="./img/TYR_B_pKa.svg" alt="pKa=6.9" width="50%" class="center">
-</p>
-
 * The pKa of TYR240 in chain A is 11.9 which looks normal. However, TYR240 in chain B as much lower pKa of 6.9. After a thorough analysis of the local environment and particularly the interactions with ARG, I am persuaded that the TYR240B is likely to be deprotonated. Furthermore, attempts to simulate a reasonable conformation of TYR240B using molecular dynamics in Amber have not been successful, lending further conficence to this hypothesis.
+
+    <p align="left">
+    <img align="left" src="./img/TYR_A_pKa.svg" alt="pKa=11.7" width="50%" class="left">
+    </p>
+
+    <p align="right">
+    <img align="right" src="./img/TYR_B_pKa.svg" alt="pKa=6.9" width="50%" class="right">
+    </p>
 
 ## 2. Build the force field
 * While updating force field parameters for a modified amino acid is not a common occurrence, the available [tutorials](https://ambermd.org/tutorials/basic/tutorial5/index.php) on the Amber website, including the one for the protein force field of ff14SB, are somewhat outdated. I've found an [Amber mail archive](http://archive.ambermd.org/202203/0174.html) that provides parameters for the deprotonated tyrosine (TYD) specifically for ff14SB. However, my current need is for a compatible set of force field parameters for TYD that would work seamlessly with ff19SB.
